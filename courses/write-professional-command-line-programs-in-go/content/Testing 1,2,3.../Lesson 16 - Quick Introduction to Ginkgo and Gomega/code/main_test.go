@@ -5,43 +5,16 @@ import (
 	. "github.com/onsi/gomega"
 )
 
-var _ = Describe("Repo manager tests", func () {
-	BeforeEach(func () {
-
-	})
-	AfterEach(func () {
-
-	})
-
-	Context("Tests for failure cases", func () {
-		It("Should fail with invalid base dir", func () {
-
-		})
-
-		It("Should fail with empty repo list", func () {
-
-		})
+var _ = Describe("Ginkgo and Gomega demo", func () {
+	It("Should succeed", func () {
+		value := 5
+		Ω(value).Should(Equal(5))
+		Expect(value).To(Equal(5))
 	})
 
-	Context("Tests for success cases", func () {
-		It("Should get repo list successfully", func () {
-
-		})
-
-		It("Should get repo list successfully with non-git directories", func () {
-
-		})
-
-		It("Should get repo list successfully with non-git directories", func () {
-
-		})
-
-		It("Should create branches successfully", func () {
-
-		})
-
-		It("Should commit files successfully", func () {
-
-		})
+	It("Should also succeed", func () {
+		today := "Sunday"
+		Ω(today).ShouldNot(Equal("Monday"))
+		Expect(today).ToNot(Equal("Monday"))
 	})
 })
