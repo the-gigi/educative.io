@@ -1,0 +1,9 @@
+FROM educative-golang-base:1.0
+
+WORKDIR /
+
+COPY calc-app /calc-app
+COPY calc-app-skeleton /calc-app-skeleton
+
+
+
