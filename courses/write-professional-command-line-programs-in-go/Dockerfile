@@ -16,6 +16,6 @@ RUN go get -u github.com/onsi/ginkgo/ginkgo && \
     go get -u github.com/google/go-github/v33 && \
     go get -u github.com/rhysd/go-github-selfupdate/...
 
-RUN git clone https://github.com/the-gigi/educative.io.git
+RUN git clone https://gitlab.com/the-gigi/educative-go-course.git
 
 

@@ -24,4 +24,15 @@ make tarball
 Upload the resulting tarball.tr.gz
 
 
+# Using code samples in terminal widgets
 
+The code samples for each course are in a separate gitlab repo. To use thos in a terminal widget, clone the repo.
+
+For example, the code for the calc-app of the Go command can be used in a terminal widget by adding the following incantation to the start script of the terminal widget:
+
+```
+cd /
+git clone https://gitlab.com/the-gigi/educative-go-command-line-course.git
+cd educative-go-command-line-course/calc-app
+clear
+```
